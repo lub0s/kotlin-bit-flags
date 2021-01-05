@@ -28,6 +28,10 @@ class Formatter {
     return (currentFlags and flags) == flags
   }
 
+  fun toggleFlags(flags: Int) {
+    currentFlags = currentFlags xor flags
+  }
+
   fun resetFlags() {
     currentFlags = 0
   }
